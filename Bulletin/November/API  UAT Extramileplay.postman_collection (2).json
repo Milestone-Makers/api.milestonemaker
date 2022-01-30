@@ -1,0 +1,69 @@
+{
+	"info": {
+		"_postman_id": "01cfe6f9-192a-4160-af83-00f61648707e",
+		"name": "API  UAT Extramileplay",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET ZIP FILE",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://uat.extramileplay.com/php/zip.php?gameId=946fa017-a6aa-4b3a-8d95-2e3d1beba4e6&sessionId=4ad6cadf-c8bb-41dd-8bca-2337dcc184ca",
+					"protocol": "https",
+					"host": [
+						"uat",
+						"extramileplay",
+						"com"
+					],
+					"path": [
+						"php",
+						"zip.php"
+					],
+					"query": [
+						{
+							"key": "gameId",
+							"value": "946fa017-a6aa-4b3a-8d95-2e3d1beba4e6"
+						},
+						{
+							"key": "sessionId",
+							"value": "4ad6cadf-c8bb-41dd-8bca-2337dcc184ca"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST MediaData",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"sessionId\":\"4ad6cadf-c8bb-41dd-8bca-2337dcc184ca\",\r\n    \"gameId\":\"946fa017-a6aa-4b3a-8d95-2e3d1beba4e6\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://uat.extramileplay.com/php/API/user.php"
+			},
+			"response": []
+		}
+	]
+}
