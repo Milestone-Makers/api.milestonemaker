@@ -38,6 +38,12 @@
             "firstPage": "/January/1.jpg",
             "view": "/Bulletin/January",
             "total": 18
+        },
+        {
+            "no": 7,
+            "firstPage": "/February/1.jpg",
+            "view": "/Bulletin/February",
+            "total": 15
         }
     ]
 }
